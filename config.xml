@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<server>
+  <!-- Server configuration for the privacyIDEA system -->
+  <url>https://solis.evosecurity.com</url>
+  <!-- define the realm at the privacyIDEA for the ADFS authentication-->
+  <realm>solis.evosecurity.com</realm>
+  <!-- false = ssl cert check disable / true = ssl cert check enabled -->
+  <ssl>true</ssl>
+  <!-- 
+      Provide a administrative user and password for the API.
+      Only needed if a challenge must be triggered (e.g. Email or SMS token)!
+      If not -> left blank.
+  -->
+  <adminuser>admin</adminuser>
+  <adminpw>solis4life!</adminpw>
+
+  <!-- UI text for the websites (no localization for now) -->
+  <interface>
+    <errormessage>Login failed! Please try again!</errormessage>
+    <wellcomemessage>Please enter your verification code below:</wellcomemessage>
+  </interface>
+</server>
